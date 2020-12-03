@@ -144,12 +144,7 @@ nav ul{
 	font-family: cursive;
 }
 /* Index */
-.row {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+
 
 .column {
   flex: 25%;
