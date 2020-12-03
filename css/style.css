@@ -14,7 +14,7 @@
             }  
         .slidercontainer {  
             max-width: 50%;  
-            position: center;  
+            position: relative;  
             margin: auto;  
         }  
         .left, .right {  
