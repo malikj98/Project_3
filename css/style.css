@@ -74,8 +74,7 @@
                 opacity: 1  
             }  
         }  
-    </style>  
-</head>  
+    
 .center {
   display: block;
   margin-left: auto;
@@ -144,7 +143,12 @@ nav ul{
 	font-family: cursive;
 }
 /* Index */
-
+.row {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .column {
   flex: 25%;
@@ -155,10 +159,4 @@ nav ul{
 .hobbies {
   color: white;
   text-align: center;
-}
-@media only screen and (max-width: 600px) {
-.sidebar {
-float: none;
-width: 100%;
-}
 }
