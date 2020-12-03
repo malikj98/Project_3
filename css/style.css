@@ -10,10 +10,10 @@
             display: none  
         }  
             .showSlide img {  
-                width: 300px;  
+                width: 100%;  
             }  
         .slidercontainer {  
-            max-width: 50%;  
+            max-width: 500px;  
             position: relative;  
             margin: auto;  
         }  
@@ -52,9 +52,9 @@
         
         .fade {  
             -webkit-animation-name: fade;  
-            -webkit-animation-duration: 2s;  
+            -webkit-animation-duration: 1.5s;  
             animation-name: fade;  
-            animation-duration: 2s;  
+            animation-duration: 1.5s;  
         }  
         @-webkit-keyframes fade {  
             from {  
