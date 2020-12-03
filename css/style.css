@@ -10,10 +10,10 @@
             display: none  
         }  
             .showSlide img {  
-                width: 50%;  
+                width: auto;  
             }  
         .slidercontainer {  
-            max-width: 1000px;  
+            max-width: auto;  
             position: relative;  
             margin: auto;  
         }  
