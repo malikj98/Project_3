@@ -5,6 +5,7 @@
     <title>HomePage</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+	
   </head>
   <body>
     <nav>
@@ -25,18 +26,47 @@
       <h3>Me with a Cessna 152</h3>
       <img src="media/a1.JPG" alt="a1" class="index">
       <h3>Here's some memes I like:</h3>
-        <div class="column">
-          <img src="media/m1.jpg" alt="m1">
-        </div>
-        <div class="column">
-          <img src="media/m2.jpg" alt="m2">
-        </div>
-        <div class="column">
-          <img src="media/m3.jpg" alt="m3">
-        </div>
-        <div class="column">
-          <img src="media/m4.jpg" alt="m4">
-        </div>
-    </div>  
+        <div class="slidercontainer">  
+        <div class="showSlide fade">  
+            <img src="media/m1.jpg" />  
+            <div class="content">1</div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="media/m2.jpg"/>  
+            <div class="content">2</div>  
+        </div>  
+  
+        <div class="showSlide fade">  
+            <img src="media/m3.jpg"/>  
+            <div class="content">3</div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="media/m4.jpg"/>  
+            <div class="content">4</div>  
+        </div>  
+        <!-- Navigation arrows -->  
+        <a class="left" onclick="nextSlide(-1)">❮</a>  
+        <a class="right" onclick="nextSlide(1)">❯</a>  
+    </div>
+	<script type="text/javascript">  
+        var slide_index = 1;  
+        displaySlides(slide_index);  
+        function nextSlide(n) {  
+            displaySlides(slide_index += n);  
+        }  
+        function currentSlide(n) {  
+            displaySlides(slide_index = n);  
+        }  
+        function displaySlides(n) {  
+            var i;  
+            var slides = document.getElementsByClassName("showSlide");  
+            if (n > slides.length) { slide_index = 1 }  
+            if (n < 1) { slide_index = slides.length }  
+            for (i = 0; i < slides.length; i++) {  
+                slides[i].style.display = "none";  
+            }  
+            slides[slide_index - 1].style.display = "block";  
+        }  
+</script>   
   </body>
 </html>
