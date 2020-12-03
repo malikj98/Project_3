@@ -1,0 +1,94 @@
+/* All Pages */
+#main-header{
+	float: left;
+	margin-top: 45px;
+	font-family: serif;
+	font-size: 36px;
+	color: #fff;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.white {
+  color: white;
+}
+
+body{
+  margin-left: 10px;	
+  background: rgb(92,86,210);
+  background: linear-gradient(180deg, rgba(92,86,210,1) 27%, rgba(0,212,255,1) 77%, rgba(9,9,121,1) 100%);
+}
+img{
+  height: 300px;
+}
+nav ul{
+	height: 60px;
+	margin: 0;
+    padding: 0;
+}
+
+/* Nav Menu */
+#navbar {
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+  list-style: none;
+  text-align: center;
+  background-color: grey;
+}
+
+/* Nav Links */
+#navbar li {
+  display: inline;
+}
+
+#navbar a {
+  padding: 12px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* Background Mouse Over */
+.navbar a:hover {
+  background-color: #000;
+}
+.video{
+  align-self:center;
+  max-width:66%;
+  height:auto;
+  border-radius: 5%;
+}
+
+/* Resume */
+.underline {
+  text-decoration: underline;
+}
+.underline1 {
+  text-decoration: underline;
+  color: white;
+}
+.cursive {
+	font-family: cursive;
+}
+/* Index */
+.row {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+
+/* Hobbies */
+.hobbies {
+  color: white;
+  text-align: center;
+}
