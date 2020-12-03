@@ -10,7 +10,7 @@
             display: none  
         }  
             .showSlide img {  
-                width: 100%;  
+                width: 50%;  
             }  
         .slidercontainer {  
             max-width: 1000px;  
