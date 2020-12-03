@@ -31,26 +31,27 @@
       <h3>Here's some memes I like:</h3>
         <div class="slidercontainer">  
         <div class="showSlide fade">  
-            <img src="media/m1.jpg" />  
+            <img src="media/m1.jpg" alt="m1" />  
             <div class="content">1</div>  
         </div>  
         <div class="showSlide fade">  
-            <img src="media/m2.jpg"/>  
+            <img src="media/m2.jpg" alt ="m2"/>  
             <div class="content">2</div>  
         </div>  
   
         <div class="showSlide fade">  
-            <img src="media/m3.jpg"/>  
+            <img src="media/m3.jpg" alt ="m3"/>  
             <div class="content">3</div>  
         </div>  
         <div class="showSlide fade">  
-            <img src="media/m4.jpg"/>  
+            <img src="media/m4.jpg" alt ="m4"/>  
             <div class="content">4</div>  
-        </div>  
+        </div>
+        </div>		
         <a class="left" onclick="nextSlide(-1)">❮</a>  
         <a class="right" onclick="nextSlide(1)">❯</a>  
     </div>
-	<script type="text/javascript">  
+	<script>  
         var slide_index = 1;  
         displaySlides(slide_index);  
         function nextSlide(n) {  
@@ -69,6 +70,6 @@
             }  
             slides[slide_index - 1].style.display = "block";  
         }  
-</script>   
+    </script>   
   </body>
 </html>
