@@ -5,6 +5,12 @@
     <title>Map</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+      #map {
+      height: 400px;
+        width: 100%;
+        }
+    </style>
 	<script src="js/script.js"></script>
 	<nav>
       <ul id="navbar">
@@ -21,17 +27,16 @@
 		  <a href="map.html">Map</a>
 		</li>
       </ul>
-    </nav>	
+    </nav>
+  <body>
+    <h3>Chicago</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+  </body>	
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-04B67v5OUE3l_cmjv1A6VrTfKSZXa68&callback=initMap&libraries=&v=weekly"
       defer
     ></script>
-    <style>
-      #map {
-      height: 400px;
-        width: 100%;
-        }
-    </style>
     <script>
       // Initialize and add the map
       function initMap() {
@@ -48,9 +53,4 @@
 }
     </script>
   
-  <body>
-    <h3>Chicago</h3>
-    <!--The div element for the map -->
-    <div id="map"></div>
-  </body>
-</html>
+  </html>
