@@ -6,8 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/script.js"></script>
-  <body class="hobbies">
-    <nav>
+	<nav>
       <ul id="navbar">
         <li>
           <a href="index.html">Home</a>
@@ -24,15 +23,18 @@
       </ul>
     </nav>	
   <script
-<<<<<<< HEAD
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-04B67v5OUE3l_cmjv1A6VrTfKSZXa68&callback=initMap&libraries=&v=weekly"
-    defer
-=======
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-04B67v5OUE3l_cmjv1A6VrTfKSZXa68&callback=initMap&libraries=&v=weekly"
       defer
->>>>>>> parent of 10906a8... Update map.html
     ></script>
-  </head>
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
     <script>
       // Initialize and add the map
       function initMap() {
@@ -48,6 +50,10 @@
   });
 }
     </script>
+  </head>
+  <body>
+    <h3>Chicago</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
   </body>
 </html>
-	
