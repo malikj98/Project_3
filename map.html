@@ -7,28 +7,39 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/script.js"></script>
 	
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+  const myLatLng = { lat: 41.878, lng: -87.629 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: myLatLng,
+  });
+  new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "Chicago",
+  });
+}
+    </script>
   </head>
   <body>
-    <nav>
-      <ul id="navbar">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="hobbies.html">Hobbies</a>
-        </li>
-        <li>
-          <a href="resume.html">Resume</a>
-        </li>
-		<li>
-		  <a href="map.html">Map</a>
-		</li>  
-      </ul>
-    </nav>
-	
-    <iframe
-      width="600"
-      height="450"
-      style="border:0" src="https://www.google.com/maps/embed/v1/place?&q=Space+Needle,Seattle+WA" allowfullscreen>
-    </iframe>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+  </body>
+</html>
 	
